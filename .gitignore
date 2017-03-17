@@ -1,0 +1,11 @@
+.DS_Store
+.idea
+.vscode
+artifact
+artifacts
+dist
+logs
+node_modules
+themeisle-sdk.php
+vendor
+.phpunit.result.cache

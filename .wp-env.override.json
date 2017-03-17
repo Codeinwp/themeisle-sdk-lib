@@ -1,0 +1,11 @@
+{
+  "core": null,
+  "plugins": [ "." ],
+  "config": {
+    "WP_DEBUG": true,
+    "WP_DEBUG_DISPLAY": true
+  },
+  "lifecycleScripts": {
+		"afterStart": "bash ./bin/setup-env-e2e.sh"
+	}
+}

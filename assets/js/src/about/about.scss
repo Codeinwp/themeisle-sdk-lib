@@ -1,0 +1,23 @@
+@import "scss/media-queries";
+
+#wpcontent {
+  padding-left: 0 !important;
+}
+
+
+.ti-about {
+  --border: 1px solid #ccc;
+  --link-color: var(--wp-admin-theme-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: normal;
+  display: grid;
+  gap: 30px;
+
+  @import "scss/generic";
+  @import "scss/header";
+  @import "scss/hero";
+  @import "scss/product-cards";
+  @import "scss/pages/generic";
+  @import "scss/pages/otter";
+}

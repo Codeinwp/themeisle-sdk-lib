@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<ruleset name="Themeisle">
+
+    <file>./</file>
+
+
+    <exclude-pattern>./vendor</exclude-pattern>
+    <exclude-pattern>./node_modules</exclude-pattern>
+    <exclude-pattern>./old</exclude-pattern>
+    <exclude-pattern>./tests/sample_products</exclude-pattern>
+    <exclude-pattern>./assets/js/build</exclude-pattern>
+    <exclude-pattern>./bin</exclude-pattern>
+
+
+
+    <rule ref="Themeisle"/>
+
+
+    <rule ref="PHPCompatibility.FunctionDeclarations.NewReturnTypeDeclarations.voidFound">
+        <exclude-pattern>tests/*</exclude-pattern>
+    </rule>
+    <rule ref="Squiz.Commenting.FunctionComment.Missing">
+        <exclude-pattern>tests/*</exclude-pattern>
+    </rule>
+    <rule ref="Squiz.Commenting.FileComment.Missing">
+        <exclude-pattern>tests/*</exclude-pattern>
+    </rule>
+    <rule ref="Squiz.Commenting.ClassComment.Missing">
+        <exclude-pattern>tests/*</exclude-pattern>
+    </rule>
+    <rule ref="Squiz.Commenting.ClassComment.SpacingAfter">
+        <exclude-pattern>tests/*</exclude-pattern>
+    </rule>
+    <rule ref="Squiz.Commenting.FunctionComment.MissingParamTag">
+        <exclude-pattern>tests/*</exclude-pattern>
+    </rule>
+    <rule ref="Generic.Commenting.DocComment.MissingShort">
+        <exclude-pattern>tests/*</exclude-pattern>
+    </rule>
+    <rule ref="Squiz.Commenting.VariableComment.Missing">
+        <exclude-pattern>tests/*</exclude-pattern>
+    </rule>
+    <rule ref="Squiz.Commenting.FunctionCommentThrowTag.Missing">
+        <exclude-pattern>tests/*</exclude-pattern>
+    </rule>
+    <rule ref="WordPress.NamingConventions.ValidFunctionName.MethodNameInvalid">
+        <exclude-pattern>tests/*</exclude-pattern>
+    </rule>
+    <rule ref="WordPress.WhiteSpace.PrecisionAlignment.Found">
+        <exclude-pattern>src/*</exclude-pattern>
+    </rule>
+    <rule ref="WordPress.NamingConventions.ValidHookName.UseUnderscores">
+        <exclude-pattern>src/*</exclude-pattern>
+    </rule>
+
+
+    <arg name="extensions" value="php"/>
+    <arg value="sp"/>
+    <arg name="basepath" value="./" />
+    <arg name="parallel" value="20"/>
+</ruleset>

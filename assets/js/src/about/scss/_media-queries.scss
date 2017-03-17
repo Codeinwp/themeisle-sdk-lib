@@ -1,0 +1,13 @@
+$tablet: '660px';
+$laptop: '992px';
+$laptop-max: '991px';
+$desktop: '1200px';
+$desktop-max: '1199px';
+$desktop-large: '1400px';
+$desktop-large-max: '1399px';
+
+
+@custom-media --desktop-lg (min-width: #{$desktop-large});
+@custom-media --desktop (min-width: #{$desktop});
+@custom-media --laptop (min-width: #{$laptop});
+@custom-media --tablet (min-width: #{$tablet});

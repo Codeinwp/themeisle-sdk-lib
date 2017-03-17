@@ -1,0 +1,275 @@
+.ti-sdk-om-notice {
+  --wp-admin-theme-color: #3858E9;
+  --wp-admin-theme-color-darker-10: #2e47ba;
+  position: relative;
+  padding: 0;
+  border-left-color: #3858E9;
+
+  .content {
+    background: rgba(255, 255, 255, 0.75);
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+  }
+
+  img {
+    max-width: 100px;
+    margin-right: 20px;
+    display: none;
+  }
+
+  .description {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #000;
+  }
+
+  .actions {
+    margin-top: auto;
+    display: flex;
+    margin-bottom: 0;
+    gap: 20px;
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .om-progress {
+    span:not(.dashicons) {
+      font-weight: 500;
+    }
+  }
+
+  input {
+    border-radius: 0;
+    min-width: 250px;
+  }
+
+  a.components-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .is-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+    span {
+      line-height: normal;
+    }
+  }
+
+  .dashicons {
+    margin-right: 2px;
+    text-decoration: none;
+  }
+
+  .done {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    a {
+      width: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ti-sdk-om-notice {
+    img {
+      display: block;
+    }
+  }
+}
+
+.compat-field-optimole {
+  th {
+    display: none !important;
+  }
+
+  td {
+    width: 100% !important;
+  }
+
+  .ti-sdk-om-notice {
+    margin: 0;
+  }
+}
+
+.om-notice-dismiss {
+  right: 10px;
+  top: 10px;
+  text-decoration: none !important;
+  position: absolute;
+
+  &:before {
+    content: none;
+  }
+}
+
+.ti-om-stack-wrap {
+  .om-stack-notice {
+    --wp-admin-theme-color: #3858E9;
+    --wp-admin-theme-color-darker-10: #2e47ba;
+
+    gap: 10px;
+    border-left: 4px solid #3858E9;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+    padding: 20px 10px;
+
+    > span {
+      display: none;
+    }
+
+    img {
+      max-width: 90px !important;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin: 30px auto 10px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 13px;
+      max-width: 250px;
+      margin: 0;
+      line-height: normal;
+    }
+
+    i {
+      margin: 10px 0 0;
+      font-size: 12px;
+      color: #757575;
+    }
+
+    .cta {
+      padding: 10px 25px !important;
+    }
+
+    .om-notice-dismiss {
+      color: inherit;
+    }
+
+    input {
+      border-radius: 0;
+    }
+
+    .done {
+      margin-top: 15px;
+      display: grid;
+      gap: 10px;
+
+      p {
+        font-size: 15px;
+        font-weight: 500;
+      }
+    }
+
+    .om-progress {
+      margin: 10px 0;
+    }
+  }
+}
+
+.block-editor-block-inspector {
+  .ti-om-stack-wrap {
+    border-top: 1px solid #e0e0e0;
+  }
+}
+
+
+.om-progress {
+  gap: 5px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+
+  .spin {
+    animation: om-rotation 2s infinite linear;
+  }
+}
+
+@keyframes om-rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+.ti-sdk-om-promo.hidden {
+  display: none;
+}
+
+.media-sidebar {
+  .ti-sdk-om-notice {
+    input {
+      min-width: unset;
+      flex-grow: 1;
+    }
+
+    .description {
+      margin-bottom: 10px;
+    }
+
+    .content {
+      padding: 15px 10px;
+    }
+
+    .actions {
+      gap: 10px;
+    }
+
+    form {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+.attachment-info {
+  .ti-sdk-om-notice {
+    input {
+      min-width: unset;
+      flex-grow: 1;
+    }
+    form {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      @media screen and (min-width: 1200px) {
+        flex-wrap: unset;
+      }
+    }
+  }
+}
+
+.ti-sdk-rop-notice {
+  position: relative;
+  padding: 10px;
+
+  .rop-notice-actions {
+    display: flex;
+    gap: 10px;
+  }
+
+  p {
+    padding: 0 10px 0 0;
+  }
+}
+
+.ti-sdk-optimole-post-publish {
+  padding: 0 !important;
+}

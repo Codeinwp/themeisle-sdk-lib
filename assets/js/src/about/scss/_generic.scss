@@ -1,0 +1,27 @@
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 15px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+button {
+  font-weight: 600;
+}
+
+.spin {
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
